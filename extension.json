@@ -1,9 +1,9 @@
 {
-  "$schema": "https://raw.githubusercontent.com/audioholic-78/one-data-extensions/main/schema/extension.schema.json",
+  "$schema": "https://raw.githubusercontent.com/audioholic-78/onedata-ext/main/schema/extension.schema.json",
   "manifest_version": 1,
   "id": "de.destination-one.demo-partner-xml",
   "name": "Demo: Partner-XML-Export",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "kind": "export_format",
   "runtime": "declarative",
   "summary": "Beispiel-Extension für Partner: gibt Datensätze als eigenes XML-Format aus – als Datei-Export und als Feed.",
