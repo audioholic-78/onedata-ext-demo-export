@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{{~ lang = config.lang ?? "de-DE" ~}}
+<partnerExport generated="{{ meta.generated_at }}" count="{{ meta.count }}" source="one.data" format="{{ meta.format }}" version="{{ meta.extension_version }}">
+{{~ for item in items ~}}
+  <object id="{{ item.id }}" type="{{ item.type }}" updated="{{ item.updated_at }}">
+    <title>{{ od.xml (od.text item.data.name lang) ?? item.name }}</title>
+    {{~ if config.include_teaser != false && item.data.texts && item.data.texts.teaserSummer ~}}
+    <teaser>{{ od.xml (od.text item.data.texts.teaserSummer lang) }}</teaser>
+    {{~ end ~}}
+    {{~ if item.data.address ~}}
+    <address street="{{ od.xml item.data.address.street }}" zip="{{ od.xml item.data.address.postalCode }}" city="{{ od.xml item.data.address.city }}"/>
+    {{~ end ~}}
+    {{~ if item.data.geo ~}}
+    <position lat="{{ item.data.geo.latitude }}" lon="{{ item.data.geo.longitude }}"/>
+    {{~ end ~}}
+    {{~ if item.data.contact && item.data.contact.phone ~}}
+    <phone>{{ od.xml item.data.contact.phone }}</phone>
+    {{~ end ~}}
+  </object>
+{{~ end ~}}
+</partnerExport>

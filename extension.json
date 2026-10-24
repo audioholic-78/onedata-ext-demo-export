@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/audioholic-78/one-data-extensions/main/schema/extension.schema.json",
+  "manifest_version": 1,
+  "id": "de.destination-one.demo-partner-xml",
+  "name": "Demo: Partner-XML-Export",
+  "version": "1.0.0",
+  "kind": "export_format",
+  "runtime": "declarative",
+  "summary": "Beispiel-Extension für Partner: gibt Datensätze als eigenes XML-Format aus – als Datei-Export und als Feed.",
+  "publisher": {
+    "name": "destination.one GmbH",
+    "url": "https://www.destination.one",
+    "email": "info@destination.one"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/audioholic-78/onedata-ext-demo-export",
+  "requires": { "onedata": ">=1.35" },
+  "categories": ["xml", "feed", "demo"],
+  "data_egress": false,
+  "config_schema": {
+    "type": "object",
+    "properties": {
+      "lang": { "type": "string", "enum": ["de-DE", "en-GB"], "default": "de-DE", "title": "Sprache der Texte" },
+      "include_teaser": { "type": "boolean", "default": true, "title": "Kurztext ausgeben" }
+    },
+    "additionalProperties": false
+  },
+  "export": {
+    "format_key": "demo_partner_xml",
+    "template": "template.scriban",
+    "content_type": "application/xml; charset=utf-8",
+    "extension": "xml",
+    "sample": "samples/export.xml"
+  }
+}

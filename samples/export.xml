@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<partnerExport generated="2026-10-24T08:00:00.0000000+00:00" count="1" source="one.data" format="demo_partner_xml" version="1.0.0">
+  <object id="5b0f6c1e-0000-4000-8000-000000000001" type="poi" updated="2026-10-24T07:55:12.0000000+00:00">
+    <title>Schloss Sanssouci</title>
+    <teaser>Sommerschloss Friedrichs des Großen mit Weinbergterrassen.</teaser>
+    <address street="Maulbeerallee" zip="14469" city="Potsdam"/>
+    <position lat="52.4045" lon="13.0386"/>
+    <phone>+49 331 9694200</phone>
+  </object>
+</partnerExport>
