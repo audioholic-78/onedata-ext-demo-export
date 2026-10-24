@@ -1,6 +1,6 @@
 # Demo: Partner-XML-Export
 
-Vorlage für Partner, die ihr **Exportformat** im od marketplace anbieten möchten.
+Vorlage für Partner, die ihr **Exportformat** im one.data marketplace anbieten möchten.
 
 ## Anbieter
 
@@ -36,7 +36,7 @@ Sicherheitsgrenzen: keine Includes, begrenzte Schleifen/Rekursion/Ausgabegröße
 
 ### So funktioniert es
 
-1. Extension im od marketplace **aktivieren** und unter *Einstellungen* die Sprache wählen.
+1. Extension im one.data marketplace **aktivieren** und unter *Einstellungen* die Sprache wählen.
 2. *Datenausgabe → Dateien & Feeds → Export*: Format „Demo: Partner-XML-Export“ wählen, Datentyp und Filter setzen,
    Export starten und herunterladen.
 3. Oder unter *Feeds* einen dauerhaften Endpunkt mit diesem Format anlegen (`/v1/feeds/{slug}`).
